@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>index</title>
+		<meta charset="utf-8" />
+		<script type="text/javascript">
+			var connection = new WebSocket("ws://127.0.0.1:8080");
+			
+			connection.onopen = function() {
+				connection.send('{"dataType":"getAllRooms"}');
+				console.log("open");
+			}
+			
+			connection.onerror = function(error) {
+				console.log("error");
+			}
+			
+			connection.onmessage = function(message) {
+				console.log("message:" + message.data);
+			}
+			
+			console.log(connection);
+			
+			function getAllRooms() {
+				connection.send('{"dataType":"getAllRooms"}');
+			}
+			
+			function getRoomInfo() {
+				connection.send('{"dataType":"getRoomInfo","roomId":"room1"}');
+			}
+			
+			function joinRoom() {
+				connection.send('{"dataType":"joinRoom","roomId":"room1"}');
+			}
+			
+			function leaveRoom() {
+				connection.send('{"dataType":"leaveRoom"}');
+			}
+			
+			function updateRoom() {
+				connection.send('{"dataType":"updateRoom","roomId":"room1","foodId":1}');
+			}
+			
+			function getAllPlayers() {
+				connection.send('{"dataType":"getAllPlayers"}');
+			}
+			
+			function getPlayer() {
+				connection.send('{"dataType":"getPlayer"}');
+			}
+			
+			function addPlayer() {
+				connection.send('{"dataType":"addPlayer","playerName":"test"}');
+			}
+		</script>
+	</head>
+	<body>
+		hello world!
+		<div onclick="getAllRooms()">getAllRooms</div>
+		<div onclick="getRoomInfo()">getRoomInfo</div>
+		<div onclick="joinRoom()">joinRoom</div>
+		<div onclick="leaveRoom()">leaveRoom</div>
+		<div onclick="updateRoom()">updateRoom</div>
+		<div onclick="getAllPlayers()">getAllPlayers</div>
+		<div onclick="getPlayer()">getPlayer</div>
+		<div onclick="addPlayer()">addPlayer</div>
+	</body>
+</html>

@@ -1,0 +1,84 @@
+html, body{ margin:0; padding:0; height:100%; max-width:320px; max-height:480px;-webkit-user-select:none;-moz-user-select:none;}
+#eater{position:relative;}
+/********************loadbar*****************************/
+.load-bar{ width:100%; height:100%; background:#999; opacity: 0.8; position:relative;}
+.load-core{ width:80%; height:40px; background:#0F0; border:#000 1px solid; position:absolute; top:50%; left:10%;}
+.load-process{ width:10%; height:100%;background:#009;}
+/******************* page ******************************/
+.cover{background:url(images/bg.png);background-size:100% 100%; }
+.choose{ background:url(images/choose.jpg);background-size:100% 100%; }
+.login{ background:url(images/avatar-bg.png);background-size:100% 100%; }
+.room-bg{ background:url(images/roombg.png);background-size:100% 100%; }
+.prepare{ background:url(images/roombg.png);background-size:100% 100%; }
+#eater.main{ background:url(images/main.png) 0 0 repeat-y;
+	-webkit-animation: mainbg 10s linear infinite;
+}
+@-webkit-keyframes mainbg {
+	from{ background-position:0 0;}
+	to{ background-position:0 -1063px;}
+}
+
+/*******************  button ******************************/
+/**cover**/
+.baozi{ width:172px; height:158px; background:url(images/baozi.png); position:absolute; bottom:10px; left:25%; background-size:100% 100%;}
+.handbook{ width:53px; height:53px; background:url(images/handbook.png);position:absolute;bottom:10px; left:5%;background-size:100% 100%;}
+.ad{ width:87px; height:58px; background:url(images/ad.png);position:absolute;bottom:5%; right:0;background-size:100% 100%;}
+.setting{ width:53px; height:53px; background:url(images/setting.png);position:absolute;bottom:100px; left:5%;background-size:100% 100%;}
+.start{ width:45px; height:223px; background:url(images/main-start.png);position:absolute;top:10%; left:20px;background-size:100% 100%;}
+/**choose**/
+.shop{ width:45px; height:125px; background:url(images/shop.png); position:absolute; background-size:100% 100%; bottom:10px; left:10px;}
+.back{ width:60px; height:60px; background:url(images/back.png); position:absolute; background-size:100% 100%; top:10px; right:10px;}
+.competition{ width:45px; height:223px; background:url(images/langame.png); position:absolute; background-size:100% 100%; top:10px; left:10px;}
+.mission{ width:45px; height:223px; background:url(images/mission.png); position:absolute; background-size:100% 100%; top:10px; left:65px;}
+/*avatar*/
+.side-left{ width:59px; height:35px; background:url(images/side.png); position:absolute; background-size:100% 100%; left:45%; top:15%;}
+.side-right{ width:59px; height:35px; background:url(images/side.png); position:absolute; background-size:100% 100%; -webkit-transform:rotate(180deg); left:45%; bottom:15%;}
+.textfield{ padding:0 15px; line-height:45px; border:0; height:45px; width:193px; background:url(images/textfield.png); position:absolute; background-size:100% 100%; top:25%; left:70px;-webkit-transform:rotate(90deg) translate(92px,80px); font-size:1.8em; color:#CCC;}
+.name{ width:31px; height:121px; background:url(images/name.png); position:absolute; background-size:100% 100%; top:35%; right:5px;}
+.head-1{ width:120px; height:119px; background:url(images/head_1.png); position:absolute; background-size:100% 100%; top:38%; left:39%;}
+.head-2{ width:120px; height:119px; background:url(images/head_2.png); position:absolute; background-size:100% 100%; top:38%; left:39%;}
+.confirm{ width:45px; height:223px; background:url(images/start.png);position:absolute;top:25%; left:15px;background-size:100% 100%;}
+/**room**/
+.join{ width:45px; height:223px; background:url(images/join.png); position:absolute; top:30%; left:20px; background-size:100% 100%;}
+.room{ width:91px; height:135px; background:url(images/room.png); position:absolute; background-size:100% 100%;}
+.roomNo0{ right:20%; top: 20%;}
+.roomNo1{ right:20%; bottom: 10%;}
+.roomNo2{ left:15%; top: 20%;}
+.roomNo3{ left:15%; bottom: 10%;}
+.roomAvatar1{ width:40px; height:40px; background:url(images/head_1.png); background-size:100% 100%; margin:17px 0 0 20px;}
+.roomAvatar2{ width:40px; height:40px; background:url(images/head_2.png); background-size:100% 100%; margin:17px 0 0 20px;}
+.available{width:40px; height:40px; background:url(images/available.png); background-size:100% 100%; margin:17px 0 0 20px;}
+/*prepare*/
+.startGame{width:45px; height:223px; background:url(images/start.png);position:absolute;top:25%; left:10px;background-size:100% 100%;}
+.wait{width:45px; height:223px; background:url(images/start-no.png);position:absolute;top:10px; left:30%;background-size:100% 100%;}
+.waitBegin{width:45px; height:223px; background:url(images/dengdai.png);position:absolute;top:10px; left:30%;background-size:100% 100%;}
+#firstPlayer{ width:120px; height:119px; position:absolute; top:20%; left:40%; background:url(images/head_1.png); background-size:100% 100%;}
+#secondPlayer{ width:120px; height:119px; position:absolute; top:60%; left:40%;background:url(images/head_2.png); background-size:100% 100%;}
+.namebar{ height:21px; width:92px; background:url(images/namebar.png); background-size:100% 100%; margin:40px 0 0 -59px; -webkit-transform:rotate(90deg); color:black; text-align:center; padding:5px 0 0 0;}
+/**play**/
+.desk{ width:65px; height:100%; background:url(images/desk.png); position:absolute; background-size:100% 100%; top:0; left:0;}
+.blood-bed{ width:22px; height:70%; background:url(images/blood_bed.png); position:absolute; top:15%; right:10px;background-size:100% 100%;}
+.blood-left{ width:20px; height:5px; background:url(images/yellow_blood.png) 0 0 no-repeat; position:absolute; top:0; left:1px;}
+.blood-right{ width:20px; height:5px; background:url(images/green_blood.png) 0 -163px no-repeat; position:absolute; bottom:0; left:1px;}
+
+#leftAvatar{ position:absolute; top:2%; right:10px;}
+#rightAvatar{ position:absolute; bottom:2%; right:10px;}
+.avatar1{ width:49px; height:49px; background:url(images/EMOTION_1.png); background-size:100% 100%;}
+.avatar2{ width:49px; height:49px; background:url(images/EMOTION_2.png); background-size:100% 100%;}
+
+#leftPlayer{ width:240px; height:120px; background:url(images/R.png); position:absolute; left:20px; top:18%; z-index:1;}
+#rightPlayer{ width:240px; height:120px; background:url(images/H.png); position:absolute; left:20px; bottom:18%; z-index:1;}
+#leftPrint{ width:200px; height:150px; background:url(images/left.png); background-size:100% 100%; position:absolute; top:0; left:10%;-webkit-user-select:none;}
+#rightPrint{width:200px; height:150px; background:url(images/right.png); background-size:100% 100%; position:absolute; bottom:0; left:10%;-webkit-user-select:none;}
+/**result*/
+.win{ width:229px; height:387px; background:url(images/win.png); background-size:100% 100%; position:absolute; top:10%; left:10%; opacity:1;}
+.lose{width:229px; height:360px; background:url(images/lose.png); background-size:100% 100%; position:absolute; top:13%; left:10%; opacity:1;}
+.mask{ width:100%; height:100%; background:#000;opacity:0.93; position:relative; z-index:1;}
+.player1{ width:220px; height:30px; position:absolute;-webkit-transform:rotate(90deg); color:white;font-size:1.5em; font-weight:bold; top:35%; left:0%; }
+.player2{ width:220px; height:30px; position:absolute;-webkit-transform:rotate(90deg); color:white; font-size:1.5em;font-weight:bold; top:35%; left:-15%;}
+#player1Name{ line-height:25px;}
+.player1Count{ position:absolute; right:0; display:inline-block;}
+.player2Count{ position:absolute; right:0; display:inline-block;}
+.eatAgain{ width:45px; height:223px; background:url(images/again.png); background-size:100% 100%;  position:absolute; top:25%; left:3%; z-index:5;}
+/*****advertisement*****/
+.advertise{ width:450px; height:320px; background:url(images/g.png); position:absolute; top:0; bottom:-450px;}

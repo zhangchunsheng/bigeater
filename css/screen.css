@@ -1,0 +1,102 @@
+html, body{ margin:0; padding:0; height:100%;}
+#eater{position:relative; width:960px; height:640px;}
+/********************loadbar*****************************/
+.load-bar{ width:100%; height:100%; background:#999; opacity: 0.8; position:relative;}
+.load-core{ width:80%; height:40px; background:#0F0; border:#000 1px solid; position:absolute; top:50%; left:10%;}
+.load-process{ width:10%; height:100%;background:#009;}
+/******************* page ******************************/
+.cover{background:url(pc/bg.png);}
+.choose{ background:url(pc/choose.jpg);}
+.login{ background:url(pc/avatar-bg.png);}
+.room-bg{ background:url(pc/roombg.png);}
+.prepare{ background:url(pc/roombg.png);}
+#eater.main{ background:url(pc/main.png) 0 0;
+	-webkit-animation: mainbg 10s linear infinite;
+}
+@-webkit-keyframes mainbg {
+	from{ background-position:0 0;}
+	to{ background-position:-2128px 0;}
+}
+/*******************  button ******************************/
+/**cover**/
+.baozi{ width:317px; height:344px; background:url(pc/baozi.png); position:absolute; bottom:150px; right:5%;}
+.handbook{ width:107px; height:107px; background:url(pc/handbook.png);position:absolute;bottom:30px; right:5%;}
+.setting{ width:107px; height:107px; background:url(pc/setting.png);position:absolute;bottom:30px; right:25%;}
+.start{ width:447px; height:90px; background:url(pc/main-start.png);position:absolute;bottom:30px; left:10%;}
+.ad{ width:117px; height:175px; background:url(pc/ad.png);position:absolute;top:0; right:5%;}
+/**choose**/
+.shop{ width:250px; height:90px; background:url(pc/shop.png); position:absolute; bottom:20px; right:10px;}
+.back{ width:120px; height:120px; background:url(pc/back.png); position:absolute; top:10px; left:20px;}
+.competition{ width:446px; height:90px; background:url(pc/langame.png); position:absolute; left:20px; bottom:20px;}
+.mission{ width:446px; height:90px; background:url(pc/mission.png); position:absolute;left:20px; bottom:135px;}
+/*avatar*/
+.side-left{ width:70px; height:118px; background:url(pc/side.png); position:absolute; top:45%; left:150px;}
+.side-right{ width:70px; height:118px; background:url(pc/side.png); position:absolute; -webkit-transform:rotate(180deg); top:45%; right:150px;}
+.textfield{ padding:0 15px; line-height:90px; border:0; height:90px; width:417px; background:url(pc/textfield.png); position:absolute;left:263px; bottom:130px; font-size:1.8em; color:#CCC;}
+input,button,select,textarea{outline:none}
+.name{ width:242px; height:62px; background:url(pc/name.png); position:absolute;left:40%; top:5px;}
+.head-1{ width:238px; height:240px; background:url(pc/head_1.png); position:absolute; top:28%; left:40%;}
+.head-2{ width:238px; height:240px; background:url(pc/head_2.png); position:absolute; top:28%; left:40%;}
+.confirm{ width:446px; height:90px; background:url(pc/start.png);position:absolute;left:263px; bottom:15px;}
+/**room**/
+.join{ width:45px; height:223px; background:url(pc/join.png); position:absolute; top:30%; left:20px;}
+.room{ width:268px; height:239px; background:url(pc/room.png); position:absolute; padding:0 0 0 15px;}
+.roomNo0{ left:150px; top: 100px;}
+.roomNo1{ right:100px; top: 100px;}
+.roomNo2{ left:150px; bottom: 50px;}
+.roomNo3{ right:100px; bottom: 50px;}
+.roomAvatar1{ width:95px; height:95px; background:url(pc/head_1.png); background-size:100% 100%; margin:91px 0 0 20px; float:left;}
+.roomAvatar2{ width:95px; height:95px; background:url(pc/head_2.png); background-size:100% 100%; margin:91px 0 0 20px; float:left;}
+.available{width:95px; height:95px; background:url(pc/available.png); background-size:100% 100%; margin:91px 0 0 20px; float:left;}
+/*prepare*/
+.startGame{width:446px; height:90px; background:url(pc/start.png);position:absolute;left:25%; bottom:50px;}
+.wait{width:446px; height:90px; background:url(pc/start-no.png);position:absolute;left:25%; bottom:50px;}
+.waitBegin{width:446px; height:90px; background:url(pc/dengdai.png);position:absolute;left:25%; bottom:50px;}
+#firstPlayer{ width:238px; height:240px; position:absolute; left:20%; top:20%; background:url(pc/head_1.png);}
+#secondPlayer{ width:238px; height:240px; position:absolute; left:60%; top:20%;background:url(pc/head_2.png);}
+.namebar{ height:34px; width:166px; background:url(pc/namebar.png);color:black; text-align:center; padding:13px 10px 0 10px; position:absolute; bottom:-42px; left:20px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden}
+/**play**/
+.desk{ width:100%; height:130px; background:url(pc/desk.png); position:absolute;bottom:0; left:0;}
+#playerOne{ position:absolute; top:10px; left:2%;}
+#playerTwo{ position:absolute; top:10px; right:2%;}
+#leftBlood{width:300px; height:45px; background:url(pc/blood_bed.png);margin-left:105px; position:relative;
+	background-size:100% 100%;
+	overflow:hidden;
+	}
+.left-blood{width:5px; height:40px; background:url(pc/yellow_blood.png) 0 0 no-repeat; 
+	position:absolute; bottom:1px; left:1px; max-width:295px;
+}
+#rightBlood{width:300px; height:45px; background:url(pc/blood_bed.png);margin-right:105px; position:relative;
+	background-size:100% 100%;
+	overflow:hidden;}
+.right-blood{ width:5px; height:40px; background:url(pc/green_blood.png) -331px 0 no-repeat; 
+	position:absolute; bottom:1px; right:5px;
+	max-width:295px;
+}
+.player-name{ color:white; font-size:24px; font-weight:bold;}
+#leftName{ margin:20px 0 0 105px;}
+#rightName{ margin:20px 105px 0 0; text-align:right;}
+
+#leftAvatar{ position:absolute; left:0; top:0;}
+#rightAvatar{ position:absolute; right:0; top:0;}
+.avatar1{ width:98px; height:98px; background:url(pc/EMOTION_1.png);}
+.avatar2{ width:98px; height:98px; background:url(pc/EMOTION_2.png);}
+#player{ width:235px; height:480px; background:url(pc/R.png); position:absolute; left:50%; top:18%; z-index:1; margin-left:-118px;}
+#leftPrint{ width:291px; height:398px; background:url(pc/left.png); position:absolute; top:30%; left:1%;}
+#rightPrint{width:291px; height:398px; background:url(pc/right.png); position:absolute; top:30%; right:1%;}
+#grab{ position:absolute; bottom:0; left:0;}
+.chickren{ background:}
+.roast{}
+/**result*/
+.win{ width:773px; height:458px; background:url(pc/win.png); position:absolute; top:10%; left:10%;}
+.lose{width:720px; height:437px; background:url(pc/lose.png); position:absolute; top:10%; left:13%;}
+.mask{ width:100%; height:100%; background:#000;opacity:0.93; position:relative; z-index:1;}
+.player1{ width:400px; height:30px; position:absolute;color:white;font-size:45px; font-weight:bold; left:15%; top:45%;}
+.player2{ width:400px; height:30px; position:absolute;color:white; font-size:45px;font-weight:bold; left:15%; top:60%;}
+#player1Name{ margin:0 30px 0 0;}
+#player2Name{ margin:0 30px 0 0;}
+.player1Count{ position:absolute; right:0; display:inline-block;}
+.player2Count{ position:absolute; right:0; display:inline-block;}
+.eatAgain{ width:447px; height:90px; background:url(pc/again.png);position:absolute; top:360px; left:150px; z-index:5;}
+/*****advertisement*****/
+.advertise{ width:450px; height:320px; background:url(pc/g.png); position:absolute; top:0; bottom:-450px;}
